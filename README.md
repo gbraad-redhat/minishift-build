@@ -10,12 +10,30 @@ Usage
 
 Create a workspace on [C9.io](http://c9.io), or a new project on [OpenShift](console.preview.openshift.com) using `gbraad/c9ide:f25` as image.
 
+
+### C9 IDE image
+
 Within the workspace run:
 ```
 $ ./bootstrap.sh
 ```
 
 the result will be available as `/workspace/bin/minishift`
+
+
+### Plain Fedora image
+
+On Fedora 25 you need to run:
+```
+$ dnf update -y
+$ dnf install -y git tar gzip make findutils
+```
+
+After this you can run the build
+
+```
+$ ./bootstrap.sh
+```
 
 
 TODO
