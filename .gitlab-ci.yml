@@ -1,5 +1,5 @@
 build:
-  image: registry.gitlab.com/gbraad/fedora:25
+  image: fedora:25
   script:
     - mkdir -p /workspace
     - ./bootstrap.sh
