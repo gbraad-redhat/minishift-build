@@ -1,9 +1,10 @@
 build:
   image: fedora:25
   script:
+    - dnf update -y
+    - dnf install -y git tar gzip make findutils
     - mkdir -p /workspace
     - ./bootstrap.sh
   artifacts:
     paths:
       - /workspace/src/github.com/minishift/minishift/out/
-  when: manual
