@@ -21,12 +21,18 @@ $ ./bootstrap.sh
 the result will be available as `/workspace/bin/minishift`
 
 
-### Plain Fedora image
+### Fedora image
 
 On Fedora 25 you need to run:
 ```
-$ dnf update -y
-$ dnf install -y git tar gzip make findutils
+$ ./install-deps.sh
+```
+
+### Fedora image
+
+On CentOS 7 you need to run:
+```
+$ ./install-deps.sh
 ```
 
 After this you can run the build

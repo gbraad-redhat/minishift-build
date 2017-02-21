@@ -1,5 +1,6 @@
 #!/bin/sh
-GOPATH=/workspace
+#GOPATH=/var/workspaces	# shared workspace
+GOPATH=/workspace	# c9ide/devenv/gitlab
 GO_TARGET=/opt
 GLIDE_TARGET=/opt
 SRC_TARGET=${GOPATH}/src/github.com/minishift/
