@@ -1,8 +1,6 @@
 build:
-  image: fedora:25
+  image: gbraad/minishift-build:latest
   script:
-    - dnf update -y
-    - dnf install -y git tar gzip make findutils
     - mkdir -p /workspace
     - ./bootstrap.sh
     - mv /workspace/src/github.com/minishift/minishift/out/ ./public
